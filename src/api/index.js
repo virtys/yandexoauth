@@ -8,20 +8,21 @@ const auth = {
       grant_type: 'authorization_code',
       client_id: APP_ID,
       client_secret: APP_PASSWORD,
-      code,
+      code
     }
     return axios.post(`${API_OAUTH}/token`, queryString.stringify(body), {
       headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
+        'Content-Type': 'application/x-www-form-urlencoded'
+      }
     })
   },
+
   refreshToken: refreshToken => {
     return axios.post(`${API_OAUTH}/token`, {
       grant_type: 'refresh_token',
-      refresh_token: refreshToken,
+      refresh_token: refreshToken
     })
-  },
+  }
 }
 
 export default auth

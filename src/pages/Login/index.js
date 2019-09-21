@@ -14,7 +14,7 @@ const Login = () => {
 const mapDispatchToProps = dispatch => ({
   auth: credentials => {
     dispatch(auth(credentials))
-  },
+  }
 })
 
 export default connect(

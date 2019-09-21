@@ -13,7 +13,7 @@ const Oauth = ({ history, authDispatch }) => {
 }
 
 const mapDispatchToProps = dispatch => ({
-  authDispatch: code => dispatch(auth(code)),
+  authDispatch: code => dispatch(auth(code))
 })
 
 export default withRouter(

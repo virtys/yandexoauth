@@ -3,7 +3,7 @@ import { auth } from './routines'
 const initialState = {
   data: null,
   loading: false,
-  error: null,
+  error: null
 }
 
 export default function authReducer(state = initialState, action) {
@@ -11,18 +11,18 @@ export default function authReducer(state = initialState, action) {
     case auth.TRIGGER:
       return {
         ...state,
-        loading: true,
+        loading: true
       }
     case auth.SUCCESS:
       return {
         ...state,
-        loading: false,
+        loading: false
       }
     case auth.FAILURE:
       return {
         ...state,
         error: action.payload,
-        loading: false,
+        loading: false
       }
     default:
       return state

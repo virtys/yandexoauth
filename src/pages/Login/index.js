@@ -6,7 +6,7 @@ import { AUTHORIZE_URL } from '../../constants/oauth.yandex'
 const Login = () => {
   return (
     <div>
-      <a href={AUTHORIZE_URL}>YA AUHTORIZATION</a>
+      <a href={AUTHORIZE_URL}>YA AUTHORIZATION</a>
     </div>
   )
 }
